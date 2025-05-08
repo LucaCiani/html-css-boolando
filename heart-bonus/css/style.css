@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1400px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #ff6900;
+    color: white;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 7px black;
+    z-index: 1000;
+}
+
+.header-flex{
+    min-height: 50px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.clothes-gender{
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.logo{
+    display: block;
+    max-height: 35px;
+}
+
+.menu{
+    display: flex;
+    gap: 1rem;
+}
+
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 45px;
+    padding: 50px 0;
+}
+
+.card-content{
+    position: relative;
+    cursor: pointer;
+}
+
+.card-content:hover .card-img-1{
+    display: none;
+}
+
+.card-content:hover .card-img-2{
+    display: block;
+}
+
+.card-img-1{
+    max-height: 650px;
+    display: block;
+}
+
+.card-img-2{
+    max-height: 650px;
+    display: none;
+}
+
+.card-content .fa-heart{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    padding: 15px;
+    background-color: white;
+    font-size: 1.5rem;
+    display: block;
+}
+
+.card-content .fa-heart:hover{
+    color: red;
+}
+
+.badge-wrapper{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+}
+
+.red-badge{
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.green-badge{
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.card-body{
+    font-size: 0.8rem;
+    padding-top: 3px;
+}
+
+.d-price{
+    color: red;
+    font-weight: bold;
+}
+
+.price{
+    text-decoration: line-through;
+}
+
+footer{
+    background-color: #1a1a1a;
+    color: white;
+    line-height: 35px;
+}
+
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.footer-ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.social-wrapper{
+    font-size: 1.5rem;
+}
